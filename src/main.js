@@ -4,8 +4,6 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import store from './store'
-import elementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
 import {
   eachOwn
 } from '@/utils'
@@ -32,7 +30,6 @@ eachOwn(directives, (directive, name) => {
 })
 
 // 安装全局插件
-Vue.use(elementUI)
 Vue.use(plugins)
 
 /* eslint-disable no-new */

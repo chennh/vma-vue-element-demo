@@ -1,5 +1,9 @@
-import demoMixin from './src/demoMixin'
+import indexMixin from './src/indexMixin'
+import formMixin from './src/formMixin'
+import detailMixin from './src/detailMixin'
 
 export {
-  demoMixin
+  indexMixin,
+  formMixin,
+  detailMixin
 }

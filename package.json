@@ -16,8 +16,9 @@
   "dependencies": {
     "axios": "^0.18.0",
     "element-ui": "^2.3.5",
-    "vma-vue-assist": "^1.0.27",
-    "vma-vue-element": "^1.0.2",
+    "vma-design-scrm": "^1.0.1",
+    "vma-vue-assist": "^1.0.61",
+    "vma-vue-element": "^1.0.29",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
     "vue-style-loader": "^3.1.2",

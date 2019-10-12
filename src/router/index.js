@@ -4,20 +4,15 @@ import * as types from './types'
 
 Vue.use(Router)
 
-const router = new Router({
+export default new Router({
   routes: [{
-    path: '/demo',
-    name: types.DEMO,
-    component: resolve => require(['@/pages/demo.vue'], resolve)
+    path: '/',
+    name: types.FRAME,
+    component: () => import('@/pages/frame/index.vue'),
+    children: [{
+      path: '/demo',
+      name: types.DEMO,
+      component: () => import('@/pages/demo/index.vue')
+    }]
   }]
 })
-
-router.beforeEach((to, from, next) => {
-  next()
-})
-
-router.afterEach(to => {
-  window.scrollTo(0, 0)
-})
-
-export default router
